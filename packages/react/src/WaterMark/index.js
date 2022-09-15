@@ -6,38 +6,38 @@ export class WaterMark extends Component {
   render() {
     const { platformName } = this.props
     return (
-      <div className={'sw-loading'}>
-        <div className={'sw-loading-center'}>
-          <div className={'sw-loading-center-absolute'}>
+      <div className={'wm-loading'}>
+        <div className={'wm-loading-center'}>
+          <div className={'wm-loading-center-absolute'}>
             <div
               className={classNames(
-                'sw-loading-center-absolute-object',
-                'sw-loading-center-absolute-four',
+                'wm-loading-center-absolute-object',
+                'wm-loading-center-absolute-four',
               )}
             />
             <div
               className={classNames(
-                'sw-loading-center-absolute-object',
-                'sw-loading-center-absolute-three',
+                'wm-loading-center-absolute-object',
+                'wm-loading-center-absolute-three',
               )}
             />
             <div
               className={classNames(
-                'sw-loading-center-absolute-object',
-                'sw-loading-center-absolute-two',
+                'wm-loading-center-absolute-object',
+                'wm-loading-center-absolute-two',
               )}
             />
             <div
               className={classNames(
-                'sw-loading-center-absolute-object',
-                'sw-loading-center-absolute-one',
+                'wm-loading-center-absolute-object',
+                'wm-loading-center-absolute-one',
               )}
             />
           </div>
-          <h1 className={'sw-loading-center-text'}>
+          <h1 className={'wm-loading-center-text'}>
             <span>{platformName}</span>
           </h1>
-          <h1 className={'sw-loading-center-text'}>
+          <h1 className={'wm-loading-center-text'}>
             <span>{platformName}</span>
           </h1>
         </div>
