@@ -1,1 +1,1 @@
-export { Loading } from './Loading'
+export { WaterMark } from './WaterMark'
