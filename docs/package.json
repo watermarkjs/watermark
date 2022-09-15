@@ -1,0 +1,16 @@
+{
+  "name": "@lerna-monorepo-template/docs",
+  "version": "0.0.0-alpha.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  }
+}
