@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-monorepo-template/monorepo",
+  "name": "@watermarkjs/monorepo",
   "private": true,
   "description": "",
   "keywords": [],
@@ -7,7 +7,6 @@
   "author": "",
   "workspaces": [
     "packages/*",
-    "app",
     "docs",
     "playground/*"
   ],
