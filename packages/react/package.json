@@ -7,7 +7,6 @@
   "author": "",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "style": "lib/index.css",
   "scripts": {
     "build": "run-s build:cjs build:es build:style",
     "build-storybook": "build-storybook",

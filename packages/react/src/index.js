@@ -1,1 +1,1 @@
-export { WaterMark } from './WaterMark'
+export { WaterMark } from './water-mark'

@@ -1,6 +1,6 @@
 {
   "name": "vue",
-  "version": "0.0.0",
+  "version": "0.0.0-alpha.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@watermarkjs/vue": "0.0.0-alpha.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {

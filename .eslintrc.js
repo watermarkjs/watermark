@@ -19,7 +19,7 @@ module.exports = {
       jsx: true,
     },
     babelOptions: {
-      presets: ['@babel/preset-react'],
+      presets: ['@babel/preset-react', '@vue/babel-preset-app'],
     },
   },
   rules: {},
