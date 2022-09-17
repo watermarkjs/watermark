@@ -8,6 +8,12 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "types": "types/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "types",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "run-s build:cjs build:es build:style build:types",
     "build-storybook": "build-storybook",
