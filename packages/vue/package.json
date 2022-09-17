@@ -1,6 +1,6 @@
 {
   "name": "@watermarkjs/vue",
-  "version": "0.0.0-alpha.2",
+  "version": "0.0.0-alpha.3",
   "description": "",
   "keywords": [
     "watermark",
@@ -38,7 +38,7 @@
     "ie >= 8"
   ],
   "dependencies": {
-    "@watermarkjs/shared-utils": "^0.0.0-alpha.2",
+    "@watermarkjs/shared-utils": "^0.0.0-alpha.3",
     "classnames": "2.3.1",
     "vue": "~3.2.39"
   },
