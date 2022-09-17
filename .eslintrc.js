@@ -1,5 +1,5 @@
 module.exports = {
-  parser: '@babel/eslint-parser',
+  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     node: true,
@@ -7,19 +7,15 @@ module.exports = {
     jest: true,
   },
   plugins: ['prettier'],
-  extends: ['plugin:prettier/recommended'],
+  extends: ['plugin:prettier/recommended', 'plugin:vue/vue3-recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
-    },
-    babelOptions: {
-      presets: ['@babel/preset-react', '@vue/babel-preset-app'],
     },
   },
   rules: {},

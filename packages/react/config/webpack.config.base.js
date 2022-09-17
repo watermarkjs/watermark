@@ -1,3 +1,4 @@
+const path = require('path')
 const TerserPlugin = require('terser-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const { getEntries } = require('./utils')
@@ -6,7 +7,10 @@ module.exports = {
   entry: getEntries(),
   mode: 'production',
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      '@': path.join(process.cwd(), 'src'),
+    },
   },
   module: {
     rules: [
@@ -15,11 +19,9 @@ module.exports = {
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
-          // options: {
-          //   presets: ['@babel/preset-env', '@babel/preset-react'],
-          // },
         },
       },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
       {
         // 匹配.css结尾的文件，i是不区别大小写
         test: /\.css$/i,

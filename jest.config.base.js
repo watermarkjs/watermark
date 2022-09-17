@@ -3,9 +3,9 @@ module.exports = {
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
   },
-  testRegex: '.(test|spec).(jsx?)$',
-  moduleFileExtensions: ['js', 'jsx', 'json', 'node', 'vue'],
+  testRegex: '.(test|spec).(t|j)sx?$',
+  moduleFileExtensions: ['js', 'jsx', 'json', 'node', 'vue', 'ts', 'tsx'],
   collectCoverage: true,
-  coveragePathIgnorePatterns: ['.mock.(jsx?)$'],
+  coveragePathIgnorePatterns: ['.mock.(t|j)sx?$'],
   verbose: true,
 }

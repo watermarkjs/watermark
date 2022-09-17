@@ -1,5 +1,7 @@
 import WaterMark from './index.vue'
 
+import { Meta, StoryFn } from '@storybook/vue3'
+
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
   title: 'Components/WaterMark',
@@ -13,10 +15,10 @@ export default {
   //     options: ['small', 'medium', 'large'],
   //   },
   // },
-}
+} as Meta<typeof WaterMark>
 
 // More on component templates: https://storybook.js.org/docs/vue/writing-stories/introduction#using-args
-const Template = (args) => ({
+const Template: StoryFn<typeof WaterMark> = (args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { WaterMark },
   // The story's `args` need to be mapped into the template through the `setup()` method

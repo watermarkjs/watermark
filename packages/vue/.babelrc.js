@@ -7,6 +7,6 @@ module.exports = {
         corejs: '3.22',
       },
     ],
-    '@vue/babel-preset-app'
+    '@vue/app'
   ],
 }

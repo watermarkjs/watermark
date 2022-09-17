@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
 
-export class WaterMark extends Component {
+interface WaterMarkProps {
+  title: string
+}
+
+export class WaterMark extends Component<WaterMarkProps> {
   render() {
     const { title } = this.props
     return <div>{title}</div>
   }
-}
-
-WaterMark.propTypes = {
-  title: PropTypes.string,
 }
 
 export default WaterMark

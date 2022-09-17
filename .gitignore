@@ -97,6 +97,7 @@ out
 dist
 lib
 es
+types
 
 # Gatsby files
 .cache/

@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "types",
+    "typeRoots": ["./types"],
+    "jsx": "react",
+    "baseUrl": "./src",
+    "paths": {
+      "@": ["src/"]
+    }
+  },
+  "include": [
+    "./src"
+  ],
+  "exclude": [
+    "src/**/*.spec.tsx",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx"
+  ]
+}

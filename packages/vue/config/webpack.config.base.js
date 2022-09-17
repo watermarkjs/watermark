@@ -1,3 +1,4 @@
+const path = require('path')
 const { VueLoaderPlugin } = require('vue-loader')
 const TerserPlugin = require('terser-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
@@ -7,7 +8,10 @@ module.exports = {
   entry: getEntries(),
   mode: 'production',
   resolve: {
-    extensions: ['.js', '.vue'],
+    extensions: ['.js', '.ts', '.vue'],
+    alias: {
+      '@': path.join(process.cwd(), 'src'),
+    },
   },
   module: {
     rules: [
@@ -16,12 +20,13 @@ module.exports = {
         loader: 'vue-loader',
       },
       {
-        test: /\.js$/,
+        test: /\.jsx$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
         },
       },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
       {
         // 匹配.css结尾的文件，i是不区别大小写
         test: /\.css$/i,

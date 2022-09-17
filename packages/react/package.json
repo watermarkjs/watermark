@@ -7,12 +7,14 @@
   "author": "",
   "main": "lib/index.js",
   "module": "es/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
-    "build": "run-s build:cjs build:es build:style",
+    "build": "run-s build:cjs build:es build:style build:types",
     "build-storybook": "build-storybook",
     "build:cjs": "rimraf lib && webpack -c config/webpack.config.cjs.js",
     "build:es": "rimraf es && webpack -c config/webpack.config.es.js",
     "build:style": "gulp",
+    "build:types": "rimraf types && tsc -p tsconfig.types.json",
     "storybook": "start-storybook -p 6006",
     "test": "jest"
   },
@@ -22,14 +24,12 @@
     "ie >= 8"
   ],
   "dependencies": {
-    "@watermarkjs/shared-utils": "^0.0.0-alpha.0",
+    "@watermarkjs/shared-utils": "workspace:*",
     "classnames": "2.3.1",
-    "prop-types": "15.8.1",
     "react": "~17.0.2",
     "react-dom": "~17.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.18.10",
     "@babel/core": "7.18.13",
     "@babel/preset-env": "7.18.10",
     "@babel/preset-react": "7.18.6",
@@ -46,6 +46,8 @@
     "@svgr/webpack": "6.3.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "12.1.5",
+    "@types/react": "17.0.39",
+    "@types/react-dom": "17.0.11",
     "autoprefixer": "10.4.8",
     "babel-jest": "29.0.1",
     "babel-loader": "8.2.5",
@@ -73,6 +75,8 @@
     "stylus-loader": "7.0.0",
     "terser-webpack-plugin": "5.3.5",
     "through2": "4.0.2",
+    "ts-loader": "9.3.1",
+    "typescript": "4.8.3",
     "url-loader": "4.1.1",
     "webpack": "5.74.0",
     "webpack-cli": "4.10.0",

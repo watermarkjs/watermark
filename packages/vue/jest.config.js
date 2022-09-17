@@ -5,6 +5,7 @@ module.exports = {
   ...base,
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.tsx?$': 'ts-jest',
     '^.+\\.vue$': '@vue/vue3-jest',
     '.+\\.(css|styl|less|sass|scss)$': 'jest-css-modules-transform',
   },
@@ -12,5 +13,8 @@ module.exports = {
   displayName: pkg.name,
   testEnvironmentOptions: {
     customExportConditions: ['node', 'node-addons'],
+  },
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
 }

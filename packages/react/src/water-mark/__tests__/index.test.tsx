@@ -7,7 +7,7 @@ import '@testing-library/jest-dom'
 import { WaterMark } from '..'
 
 test('loads and displays greeting', async () => {
-  render(<WaterMark platformName="Test" />)
+  render(<WaterMark title="Test" />)
 
-  expect(screen.getAllByText('Test').length).toBe(2)
+  expect(screen.getAllByText('Test').length).toBe(1)
 })
