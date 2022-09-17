@@ -2,7 +2,10 @@
   "name": "@watermarkjs/monorepo",
   "private": true,
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "watermark",
+    "react"
+  ],
   "license": "MIT",
   "author": "",
   "workspaces": [

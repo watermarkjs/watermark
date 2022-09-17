@@ -2,7 +2,10 @@
   "name": "@watermarkjs/vue",
   "version": "0.0.0-alpha.1",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "watermark",
+    "vue"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/watermarkjs/watermark",
