@@ -1,1 +1,1 @@
-# @lerna-monorepo-template/shared-utils
+# @watermarkjs/shared-utils

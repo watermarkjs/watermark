@@ -1,1 +1,1 @@
-# @lerna-monorepo-template/components
+# @watermarkjs/react
