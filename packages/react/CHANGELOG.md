@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.0.0-alpha.2](https://github.com/watermarkjs/watermark/compare/v0.0.0-alpha.1...v0.0.0-alpha.2) (2022-09-17)
+
+
+### Bug Fixes
+
+* github action ([3e933f5](https://github.com/watermarkjs/watermark/commit/3e933f5bf4e80330ff96158dccdb7f2f431807eb))
+
+
+
+
+
 # 0.0.0-alpha.1 (2022-09-17)
 
 
