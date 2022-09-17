@@ -8,11 +8,6 @@
   ],
   "license": "MIT",
   "author": "",
-  "workspaces": [
-    "packages/*",
-    "docs",
-    "playground/*"
-  ],
   "scripts": {
     "build": "pnpm run --filter @watermarkjs/* build",
     "test": "pnpm run --filter @watermarkjs/* test",
