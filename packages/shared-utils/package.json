@@ -3,8 +3,13 @@
   "version": "0.0.0-alpha.1",
   "description": "",
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watermarkjs/watermark",
+    "directory": "packages/shared-utils"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "Kimmy <hi@kimmy.me>",
   "exports": {
     ".": {
       "import": "es/index.js",
